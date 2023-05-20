@@ -1,0 +1,204 @@
+
+:root {
+  --orange: #DA722C;
+  --purple: #023047;
+  --dark: #070917;
+  --blue: #057ADA;
+  --blue2: #6F7DFB;
+  --light: #E8F7FB;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+.p-bold {
+  font-weight: bold;
+}
+
+.p-big {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+
+*, *::before, *::after {
+  /* box-sizing: border-box; */
+}
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 24px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.dark {
+  background: var(--purple);
+}
+
+.light {
+  background: var(--orange);
+}
+
+.btn.pencil-icon::before{
+  content: url("/images/Pencil.svg");
+}
+
+.wrapper {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 1134px;
+  top: 35px;
+  z-index: 100;
+}
+
+nav .logo {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+/* new class */
+
+.new-class {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 118px;
+}
+
+/* .achievement-cards {
+  display: none;
+} */
+
+.new-class .left h1 {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 125%;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.new-class .left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  width: 457px;
+}
+
+.new-class .left {
+  flex: 1;
+}
+
+.new-class .right {
+  align-self: flex-end;
+}
+.new-class .right img {
+  width: 446px;
+  height: 582px;  
+  vertical-align: middle;
+}
+
+
+.achievement-card {
+  position: absolute;
+}
+.achievement-card .content { 
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 8px 34px;
+  position: relative;
+  z-index: 1;
+}
+
+.achievement-card.students-enrolled {
+  left: 45%;
+  top: 323px;
+}
+
+.achievement-card .content h3 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #023047;
+  text-align: center;
+  margin: 0;
+}
+
+.achievement-card .content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #023047;
+  text-align: center;
+  margin: 0;
+}
+
+.achievement-card.overall-rating {
+  left: 43%;
+  top: 522px;
+}
+
+.overall-rating .content div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.achievement-card .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 10px;
+  top: 10px;
+  background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+  border-radius: 24px;
+  z-index: 0;
+}
